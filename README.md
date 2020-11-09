@@ -1,5 +1,5 @@
 # AzureSentinelForwarder
-A simple container that will forward all your Azure Sentinel incidents to an Eventhub
+A simple container that will forward all your Azure Sentinel incidents to an Eventhub.
 
 Azure Sentinel has no out-of-the box push mechanism. By forwarding all your incidents to an eventhub, you can basically get that push mechanism by subscribing on the eventhub. You can accoumplish the forward by building a logic app (which you need de configure for each analytics rule that you create) or use this project. 
 
@@ -23,3 +23,6 @@ How does it work?
    - EventHubName     
 4. Make sure docker is installed. Run from a commandshell docker-compose up.
 5. The AzureForwarder will now forward all events from your Azure Sentinel Workspace to an EventHub
+
+## About
+I started this project to learn more about the Azure Sentinel rest API. It turns out, the project came in handy.
