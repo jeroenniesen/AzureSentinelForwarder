@@ -1,0 +1,18 @@
+
+version: '3.4'
+
+services:
+  sentinel-forwarder:
+    image: sentinel-forwarder
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      AzureSubscriptionId: ""
+      AzureSentinelResourceGroup: ""
+      AzureSentinelWorkspaceName: ""
+      AppRegistrationClientId: ""
+      AppRegistrationDirectoryId: ""
+      AppRegistrationSecret: ""
+      EventHubConnectionString: ""
+      EventHubName: ""      

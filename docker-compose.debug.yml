@@ -1,0 +1,11 @@
+
+version: '3.4'
+
+services:
+  sentinelconsole:
+    image: sentinelconsole
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
